@@ -8,13 +8,14 @@ import javax.persistence.Id;
 @Entity
 public class Unit {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	long id;
 	
 	private int defence;
 	private int attack;
 	private int movement;
 	private String name;
+	
 	public long getId() {
 		return id;
 	}
